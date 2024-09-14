@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savdo Platform</title>
+    <link rel="stylesheet" href="./homePage.css" />
+  </head>
+  <body>
+    <div class="box">
+      <!-- header -->
+      <header>
+        <h1 class="title">Home page</h1>
+      </header>
+
+      <!-- main -->
+      <main>
+
+        <!-- data input -->
+        <div class="forms">
+            <form id="userForm">
+                <input name="fullName" required placeholder="fullName" type="text" />
+                <input name="email" required placeholder="email" type="email" />
+                <input name="password" required placeholder="password" type="text" />
+                <input name="userName" required placeholder="userName" type="text" />
+                <input name="phoneNumber" required placeholder="phoneNumber" type="number" />
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+
+        <!-- Foydalanuvchilar ma'lumotlarini ko'rsatish uchun jadval -->
+        <table id="usersTable" border="1">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Username</th>
+              <th>Password</th>
+              <th>Phone Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JavaScript orqali ma'lumotlar shu yerga qo'shiladi -->
+          </tbody>
+        </table>
+      </main>
+
+      <!-- footer -->
+      <footer></footer>
+    </div>
+
+    <script src="./homePage.js"></script>
+  </body>
+</html>
