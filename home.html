@@ -24,8 +24,10 @@
                 <input name="password" required placeholder="password" type="text" />
                 <input name="username" required placeholder="userName" type="text" />
                 <input name="phonenumber" required placeholder="phoneNumber" type="number" />
-                <button type="submit">Submit</button>
+                <button type="submit" class="submitBtn">Submit</button>
               </form>
+              <!-- Xatoliklar uchun div qo'shildi -->
+              <div id="error-message"></div>
         </div>
 
         <!-- Foydalanuvchilar ma'lumotlarini ko'rsatish uchun jadval -->
@@ -44,10 +46,33 @@
             <!-- JavaScript orqali ma'lumotlar shu yerga qo'shiladi -->
           </tbody>
         </table>
+
+        <!-- update section -->
+         <section class="update-section">
+          <table id="updateUsersTable" border="1">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>Phone Number</th>
+                <th>O'zgartirish</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Ma'lumotlar shu yerga JavaScript orqali qo'shiladi -->
+            </tbody>
+          </table>
+          
+         </section>
       </main>
 
       <!-- footer -->
-      <footer></footer>
+      <footer>
+        <h1>This Footer</h1>
+      </footer>
     </div>
 
     <script src="./homePage.js"></script>
