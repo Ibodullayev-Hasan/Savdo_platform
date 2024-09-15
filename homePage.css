@@ -13,9 +13,11 @@ body {
 
 .box {
   width: 1340px;
-  height: auto;
+  height: 100vh;
   margin: 0 auto;
   padding: 5px;
+  overflow: hidden;
+  overflow-y: scroll;
   /* border: 1px solid white; */
 }
 
