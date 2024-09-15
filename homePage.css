@@ -8,7 +8,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: darkgreen;
+  background-image: linear-gradient(blue, red);
 }
 
 .box {
@@ -19,39 +19,38 @@ body {
   /* border: 1px solid white; */
 }
 
-
 /* header */
-header{
+header {
   width: 100%;
   height: 250px;
-  background-color: rgb(142, 30, 10); 
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
 }
 
-.title{
+.title {
   text-align: center;
   padding: 2px;
   margin-bottom: 10px;
   line-height: 100px;
   font-weight: 600;
-  color: white;
+  color: rgb(14, 13, 13);
 }
 
-h1{
-  color: white;
+main h1 {
+  color: rgb(0, 0, 0);
   text-align: center;
 }
 
-
 /* main */
-main{
+main {
   width: 100%;
   height: auto;
-  background-color: rgb(221, 92, 11);
+  background-color: rgb(255, 255, 255);
   padding: 5px;
+  overflow: hidden;
 }
 
-
-.forms{
+.forms {
   border-radius: 12px;
   border: 2px double skyblue;
   width: 90%;
@@ -66,7 +65,7 @@ main{
 .submitBtn {
   position: relative;
   top: 4vh;
-  left:35vh;
+  left: 35vh;
   border-radius: 8px;
   padding: 2px;
   width: 70px;
@@ -76,23 +75,24 @@ main{
   cursor: pointer;
 }
 
-
-#error-message{
+#error-message {
   width: 400px;
-  height: 100px;
+  height: 70px;
   display: none;
   text-align: center;
-  line-height: 100px;
+  line-height: 60px;
   font-size: 1.5rem;
   border-radius: 15px;
-  background-color: rgb(225, 222, 222);
+  background-color: rgb(255, 255, 255);
+  color: red;
   box-shadow: 10px 5px 5px darkblue;
-  position: relative;
-  right: -120vh;
-  top: 20vh;
+  position: fixed;
+  right: 5vh;
+  top: 2vh;
+  z-index: 100;
 }
 
-#usersTable{
+#usersTable {
   border-radius: 10px;
   border: 1px solid white;
   width: 90%;
@@ -100,42 +100,70 @@ main{
   background-color: rgb(9, 54, 102);
   margin: 15px 0;
   color: white;
-
 }
 
 #usersTable th:nth-child(1) {
   color: yellow;
 }
 
-#usersTable tbody td{
+#usersTable tbody td {
   padding-left: 8px;
 }
 
-#usersTable tbody tr td:nth-child(1){
+#usersTable tbody tr td:nth-child(1) {
   color: yellow;
   font-weight: 600;
   padding-left: 5px;
 }
 
+#updateUsersTable tbody td input {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  border: none;
+}
 
+#updateUsersTable tbody tr td {
+  color: yellow;
+}
+#updateUsersTable th:nth-child(1) {
+  color: yellow;
+}
+
+#updateUsersTable tbody td {
+  padding: 2px;
+  padding-left: 5px;
+}
+#updateUsersTable {
+  width: 98%;
+  margin: 5px auto;
+}
+
+#updateUsersTable tbody td button {
+  background-color: blue;
+  color: white;
+  padding: 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#updateUsersTable tbody td button:nth-child(2) {
+  background-color: red;
+}
 /* update-section */
-.update-section{ 
+.update-section {
   border-radius: 10px;
   border: 1px solid white;
   width: 90%;
   height: 300px;
-  background-color: rgb(47, 183, 47);
+  background-color: rgb(66, 214, 66);
   margin: 15px 0;
-  color: black;
 }
 
-
-
 /* footer */
-footer{
+footer {
   width: 100%;
   height: 200px;
-  background-color: darkblue; 
+  background-color: darkblue;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
