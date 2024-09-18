@@ -37,7 +37,10 @@ document
           throw new Error("Serverda xatolik yuz berdi");
         }
       })
-      .then(() => {
+      .then((data) => {
+        const token = data.token; // Serverdan qaytarilgan token
+        
+        localStorage.setItem("authToken", token);
         window.location.href = "/ui/main page/index.html";
       })
 
