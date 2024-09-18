@@ -12,10 +12,10 @@ body {
 }
 
 .box {
-  width: 1340px;
+  width: 1360px;
   height: 100vh;
   margin: 0 auto;
-  padding: 5px;
+  padding: 2px;
   overflow: hidden;
   overflow-y: scroll;
   /* border: 1px solid white; */

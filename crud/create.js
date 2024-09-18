@@ -1,9 +1,12 @@
-// CREATED
-// ----------------------------------------------------------------------------------
+// CREATE
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector(".sign-up").style.display = "flex";
+});
+let a = document.getElementById("sign-up-form").value
+console.log(a);
 
-// POST so'rovini yuborish
 document
-  .getElementById("userForm")
+  .getElementById("sign-up-form")
   .addEventListener("submit", function (event) {
     event.preventDefault(); // Formani yuborishni oldini oladi
 
@@ -15,6 +18,8 @@ document
       phonenumber: this.phonenumber.value,
     };
 
+    // console.log(formData.username);
+    
     // API'ga POST so'rovi yuborish
     fetch("https://api-5-lac.vercel.app/user/create", {
       method: "POST",
@@ -25,7 +30,6 @@ document
     })
       .then((response) => {
         if (response.status === 409) {
-          // Agar status 409 bo'lsa, foydalanuvchi mavjud
           throw new Error("Siz avval ro'yxatdan o'tgansiz❗");
         } else if (response.ok) {
           return response.json();
@@ -34,9 +38,11 @@ document
         }
       })
       .then(() => {
-        window.location.reload();
+        window.location.href = "/ui/main page/index.html";
       })
+
       .then((data) => {
+        
         // Muvaffaqiyatli bo'lsa, yangi foydalanuvchini jadvallingizga qo'shasiz
         const usersTableBody = document.querySelector("#usersTable tbody");
         const row = document.createElement("tr");
@@ -60,3 +66,8 @@ document
         }, 15000);
       });
   });
+
+  
+  let h1 = document.querySelector(".sign-title");
+  h1.textContent = "Sign up";
+  

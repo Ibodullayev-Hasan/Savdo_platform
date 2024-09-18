@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savdo Platform</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+    <link rel="stylesheet" href="../main page/homeDesign.css" />
+    <link rel="stylesheet" href="./usersStyle.css" />
+  </head>
+  <body>
+    <!-- site box -->
+    <div class="box">
+      <!-- main -->
+      <main>
+        <!-- dashboard -->
+        <div id="dashboard">
+          <!--logo and title-->
+          <div class="logotip">
+            <img
+              src="../../static/3d-vector-delivery-van-box-600nw-2176128311.webp"
+              alt="Air7.jpg"
+              class="site-logo"
+            />
+            <p class="site-name">Savdo Platform</p>
+          </div>
+
+          <!-- navigations  -->
+          <div class="navigation">
+            <p class="role">Admin...</p>
+            <a href="../main page/index.html" target="_top">
+              <div class="navigation-div home">
+                <i class="fa fa-home"></i>
+                <p>Home</p>
+              </div>
+            </a>
+            <a href="../users/users.html" target="_top">
+              <div class="navigation-div users">
+                <i class="fa fa-user-circle"></i>
+                <p>Users</p>
+              </div>
+            </a>
+            <a href="#" target="_top">
+              <div class="navigation-div products">
+                <i class="fa fa-shopping-basket"></i>
+                <p>Products</p>
+              </div>
+            </a>
+            <a href="#" target="_top">
+              <div class="navigation-div contacts">
+                <i class="fa fa-address-book"></i>
+                <p>Contacts</p>
+              </div>
+            </a>
+            <a href="#" target="_top">
+              <div class="navigation-div orders">
+                <i class="fa fa-reorder"></i>
+                <p>Orders</p>
+              </div>
+            </a>
+            <a href="#" target="_top">
+              <div class="navigation-div analize">
+                <i class="fa fa-bar-chart"></i>
+                <p>Analize</p>
+              </div>
+            </a>
+            <div class="navigation-div dark-light">
+              <i class="fa fa-moon-o"></i>
+              <i class="fa fa-sun-o"></i>
+              <p>light</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- --------------------------------------------------------------- -->
+        <!-- menu -->
+        <div class="menu">
+          <div class="header">
+            <div class="search-dev">
+              <input
+                id="searchInput"
+                type="search"
+                placeholder="Search user by name..."
+              />
+              <button id="searchButton" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          
+             <!-- admin name v img -->
+             <div class="account-img">
+              <p id="adminName">Admin name...</p>
+
+              <img id="inputImg" src="" alt="Uploaded Image">
+              <label for="uploadImg">Yukla</label> 
+              <input type="file" accept="image/*" id="uploadImg" style="display: none;">
+             </div>
+          </div>
+
+          <div class="section-table">
+            <div class="usersTablediv">
+              <table id="usersTable" border="1">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Phone Number</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+            <p id="no-thing">Hech qanday foydalanuvchi topilmadi</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="../main page/webEngine.js"></script>
+    <script src="./usersScript.js"></script>
+    <script src="../main page/homeEngine.js"></script>
+  </body>
+</html>

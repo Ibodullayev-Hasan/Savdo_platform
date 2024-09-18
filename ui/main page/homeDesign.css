@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 2px solid black; */
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Monda:wght@100;200;300;400;500;600;700&display=swap);
+
+body {
+  font-family: "Monda", sans-serif;
+  background-color: darkblue;
+}
+
+/* box */
+.box {
+  width: 1370px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+/* main part */
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* dashboard */
+#dashboard {
+  width: 25%;
+  height: 100%;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* logo and title */
+.logotip {
+  width: 20rem;
+  height: 13rem;
+  background-color: darkcyan;
+  position: fixed;
+  z-index: 100;
+  overflow: hidden;
+}
+
+.site-logo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 10px;
+  user-select: none;
+}
+
+.site-logo img {
+  object-fit: cover;
+}
+
+.site-name {
+  text-align: right;
+  padding-right: 2vh;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
+  color: white;
+  font-size: 1.3rem;
+  user-select: none;
+}
+
+/* navigations */
+.navigation {
+  width: 99%;
+  height: 80vh;
+  background-color: yellow;
+  position: relative;
+  top: 31vh;
+  padding-top: 5px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+.role {
+  margin: 10px 0;
+  text-align: center;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  padding: 6px 0;
+}
+
+.navigation-div {
+  letter-spacing: 0.1rem;
+  padding-left: 5px;
+  margin-bottom: 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  user-select: none;
+}
+
+.navigation-div:nth-child(7) {
+  border: none;
+}
+.navigation-div:nth-child(8) {
+  border: none;
+}
+
+
+.users i {
+  font-size: 2rem;
+}
+
+.contacts i {
+  font-size: 2rem;
+}
+
+.orders i {
+  font-size: 1.8rem;
+}
+
+.navigation-div i {
+  font-size: 1.7rem;
+}
+.home i {
+  font-size: 2.2rem;
+}
+
+.analize i {
+  font-size: 1.4rem;
+}
+
+.navigation-div p {
+  position: absolute;
+  left: 8vh;
+}
+
+.dark-light p {
+  position: relative;
+  left: 7vh;
+}
+
+.dark-light i {
+  position: absolute;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------- */
+/* menu part*/
+.menu {
+  width: 75%;
+  height: 100%;
+  /* display: grid; */
+  background-color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+/* headers */
+.header {
+  width: 62.9rem;
+  height: 100px;
+  background-color: rgb(189, 188, 188);
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.account-img {
+  width: 99%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  color: gray;
+}
+
+.account-img p {
+  width: 70%;
+  height: 50%;
+}
+
+.account-img img {
+  width: 14vh;
+  height: 14vh;
+  position: relative;
+  top: -1.8vh;
+  border-radius: 50%;
+  object-fit: fill;
+}

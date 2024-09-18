@@ -1,0 +1,35 @@
+Savdo Platformasi!
+
+1.User
+- register
+- login(token vaqtli, parollar hashlangan)
+
+
+2.Super Admin(qo'lda qo'shiladi, va u 2ta assistant admin CRUD qilaoladi),
+ -Super Admin faqat assistant adminlar bn ishlaydi va userlarni ko'ra oladi
+ -Userlar saytda o'zlarini o'zlari update va leave qila oladi
+ -Assistant adminlar faqat admin panel bilan ishlaydi
+ -admin panel butun saytni boshqaruvi(userlarni R,D qilish, productsni CRUD qilish, ordersni CRUD qilish )
+
+
+3.Products
+- Bo'limlar( Kolbasalar, sosiskalar, pishloqlar, muzqaymoqlar) = CRUD
+
+-Categories
+- Kolbasalar categories( dudlangan, dudlanmagan, molgo'shtidan, qazili) = CRUD
+- Sosiskalar categories( molgo'shtidan, tovuqli) = CRUD
+- Pishloqlar categories( Mozzarella, Cheddar, Feta, Camembert) = CRUD
+- Muzqaymoqlar categories( qaymoqli, mevali) = CRUD
+
+
+4.Products priceni
+-arzon
+-o'rta
+-qimmat
+-premium 
+kabi categorielari bo'lib bularni assistant adminlar chegaralarini belgilaydi. Masalan: admin arzonning min va maxini beligilaydi, 0 dan 10 minggacha qilib
+
+
+5.Orders
+-Buyurtmachini avval saytdan regsiter qilganini tekshirish
+-Buyurtmachini( ismi, adressi, nima olayotgani, tel raqami, product soni,) = CRUD
