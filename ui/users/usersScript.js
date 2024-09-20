@@ -30,7 +30,6 @@ function fetchUsers() {
       }
     })
     .then((data) => {
-
       populateTable(data.data);
     })
     .catch((error) => {
@@ -41,9 +40,7 @@ function fetchUsers() {
 // Ma'lumotlarni jadvalga qo'shish funksiyasi
 function populateTable(users) {
   const usersTableBody = document.querySelector("#usersTable tbody");
-  usersTableBody.style.display = "block"
   usersTableBody.innerHTML = "";
-
   users.forEach((user) => {
     const row = document.createElement("tr");
     row.innerHTML = `
@@ -87,8 +84,6 @@ function searchUsersByName(name) {
       console.error("Xatolik:", error);
     });
 }
-document.addEventListener("DOMContentLoaded", fetchUsers());
-
 
 //////////////// img upload ///////////////
 document.getElementById("uploadBtn").style.display = "block";
@@ -107,3 +102,5 @@ document.getElementById("uploadBtn").addEventListener("click", function () {
     reader.readAsDataURL(file);
   }
 });
+
+document.addEventListener("DOMContentLoaded", fetchUsers());

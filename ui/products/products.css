@@ -1,4 +1,13 @@
+.menu {
+  width: 74%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
 .header {
+  width: 68.9%;
   height: 80px;
 }
 
@@ -14,12 +23,14 @@
 }
 
 
+
+
 section{
     width: 100%;
     height: auto;
     background-color: transparent;
     position: relative;
-    top: 5rem;
+    top: 4rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

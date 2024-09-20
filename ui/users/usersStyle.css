@@ -1,5 +1,5 @@
 .header {
-  width: 62.9rem;
+  width: 66.8rem;
   height: 100px;
   background-color: rgb(189, 188, 188);
   position: fixed;
@@ -138,5 +138,5 @@
   width: 80%;
   position: absolute;
   left: 2rem;
-  display: none;
+  /* display: none; */
 }

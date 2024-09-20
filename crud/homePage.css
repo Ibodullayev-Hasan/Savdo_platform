@@ -46,10 +46,11 @@ main h1 {
 /* main */
 main {
   width: 100%;
-  height: auto;
+  height: 90vh;
   background-color: rgb(255, 255, 255);
   padding: 5px;
   overflow: hidden;
+  overflow-y: scroll;
 }
 
 .forms {
@@ -156,7 +157,7 @@ main {
   border-radius: 10px;
   border: 1px solid white;
   width: 90%;
-  height: 300px;
+  height: auto;
   background-color: rgb(66, 214, 66);
   margin: 15px 0;
 }
