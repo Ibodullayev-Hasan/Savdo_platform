@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // const token = localStorage.getItem("authToken");
+  const token = localStorage.getItem("authToken");
   let adminName = document.getElementById("adminName");
   adminName.textContent = "Ibodullayev Hasan";
 
