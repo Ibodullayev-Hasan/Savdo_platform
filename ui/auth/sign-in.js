@@ -46,12 +46,22 @@ document
         window.location.href = "../ui/main page/index.html";
       })
       .catch((error) => {
-        // Xatolikni ekranga chiqarish (masalan, "already exist user")
         const errorMessage = document.getElementById("error-message");
-        errorMessage.textContent = error.message;
-        errorMessage.style.display = "block";
-        setTimeout(() => {
-          errorMessage.style.display = "none";
-        }, 15000);
+        console.log(error);
+        
+        if (error.message == "Failed to fetch") {
+          error.message = "Connection error. Try again";
+          errorMessage.textContent = error.message;
+          errorMessage.style.display = "block";
+          setTimeout(() => {
+            errorMessage.style.display = "none";
+          }, 5000);
+        } else {
+          errorMessage.textContent = error.message;
+          errorMessage.style.display = "block";
+          setTimeout(() => {
+            errorMessage.style.display = "none";
+          }, 5000);
+        }
       });
   });

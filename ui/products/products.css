@@ -1,0 +1,37 @@
+.header {
+  height: 80px;
+}
+
+.account-img p {
+  height: 82%;
+  position: relative;
+  left: 2rem;
+  top: -.6rem;
+}
+
+.img-label {
+  top: -0.7rem;
+}
+
+
+section{
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    position: relative;
+    top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+section div {
+    width: 31%;
+    height: 28rem;
+    background-color: rgb(8, 155, 47);
+    margin-top: 10px;
+    border-radius: 12px;
+}

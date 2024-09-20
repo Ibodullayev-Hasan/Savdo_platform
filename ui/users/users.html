@@ -44,7 +44,7 @@
                 <p>Users</p>
               </div>
             </a>
-            <a href="#" target="_top">
+            <a href="/ui/products/products.html" target="_top">
               <div class="navigation-div products">
                 <i class="fa fa-shopping-basket"></i>
                 <p>Products</p>
@@ -90,15 +90,16 @@
                 <i class="fa fa-search"></i>
               </button>
             </div>
-          
-             <!-- admin name v img -->
-             <div class="account-img">
-              <p id="adminName">Admin name...</p>
 
-              <img id="inputImg" src="" alt="Uploaded Image">
-              <label for="uploadImg">Yukla</label> 
-              <input type="file" accept="image/*" id="uploadImg" style="display: none;">
-             </div>
+            <!-- admin name v img -->
+            <div class="account-img">
+              <p id="adminName">Admin name...</p>
+              <input type="file" id="image" accept="image/*" />
+              <button id="uploadBtn">Upload</button>
+              <label for="image" class="img-label">
+                <img id="preview" src="" alt="shu yerni bos" />
+              </label>
+            </div>
           </div>
 
           <div class="section-table">
@@ -123,7 +124,6 @@
       </main>
     </div>
 
-    <script src="../main page/webEngine.js"></script>
     <script src="./usersScript.js"></script>
     <script src="../main page/homeEngine.js"></script>
   </body>

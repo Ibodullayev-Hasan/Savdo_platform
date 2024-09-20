@@ -20,7 +20,6 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-// Foydalanuvchilarni olish va jadvalni to'ldirish funksiyasi
 function fetchUsers() {
   fetch("https://api-5-lac.vercel.app/")
     .then((response) => {
@@ -31,6 +30,7 @@ function fetchUsers() {
       }
     })
     .then((data) => {
+
       populateTable(data.data);
     })
     .catch((error) => {
@@ -41,6 +41,7 @@ function fetchUsers() {
 // Ma'lumotlarni jadvalga qo'shish funksiyasi
 function populateTable(users) {
   const usersTableBody = document.querySelector("#usersTable tbody");
+  usersTableBody.style.display = "block"
   usersTableBody.innerHTML = "";
 
   users.forEach((user) => {
@@ -86,5 +87,23 @@ function searchUsersByName(name) {
       console.error("Xatolik:", error);
     });
 }
-
 document.addEventListener("DOMContentLoaded", fetchUsers());
+
+
+//////////////// img upload ///////////////
+document.getElementById("uploadBtn").style.display = "block";
+document.getElementById("uploadBtn").addEventListener("click", function () {
+  const fileInput = document.getElementById("image");
+  const file = fileInput.files[0];
+  document.getElementById("uploadBtn").style.display = "none";
+
+  if (file) {
+    const reader = new FileReader();
+
+    reader.onload = function (event) {
+      document.getElementById("preview").src = event.target.result;
+    };
+
+    reader.readAsDataURL(file);
+  }
+});

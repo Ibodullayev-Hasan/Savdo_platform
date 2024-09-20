@@ -1,7 +1,6 @@
 // Vercel'dagi API'ga HTTP GET so'rovi yuborish
 fetch("https://api-5-lac.vercel.app/")
   .then((response) => {
-    // Agar so'rov muvaffaqiyatli bo'lsa, javob JSON formatida qaytariladi
     if (response.ok) {
       return response.json();
     } else {

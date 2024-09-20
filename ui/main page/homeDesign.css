@@ -9,7 +9,7 @@
 
 body {
   font-family: "Monda", sans-serif;
-  background-color: darkblue;
+  /* background-color: darkblue; */
 }
 
 /* box */
@@ -75,7 +75,7 @@ main {
   height: 80vh;
   background-color: yellow;
   position: relative;
-  top: 31vh;
+  top: 13rem;
   padding-top: 5px;
 }
 
@@ -105,11 +105,11 @@ main {
   user-select: none;
 }
 
-.navigation-div:nth-child(7) {
-  border: none;
+.analize {
+  border-bottom: none;
 }
-.navigation-div:nth-child(8) {
-  border: none;
+.dark-light {
+  border-bottom: none;
 }
 
 
@@ -141,9 +141,13 @@ main {
   left: 8vh;
 }
 
+.dark-light{
+  margin-top: 2rem;
+}
 .dark-light p {
   position: relative;
   left: 7vh;
+
 }
 
 .dark-light i {
@@ -188,6 +192,15 @@ main {
 .account-img p {
   width: 70%;
   height: 50%;
+  font-size: 1.5rem;
+  font-weight: 550;
+  line-height: 7vh;
+  position: relative;
+  left: 2rem;
+  max-width:60%;
+  overflow: hidden;
+  color: white;
+  user-select: none;
 }
 
 .account-img img {
@@ -197,4 +210,43 @@ main {
   top: -1.8vh;
   border-radius: 50%;
   object-fit: fill;
+}
+
+#uploadBtn{
+  position: absolute;
+  right: 10rem;
+  top: 3rem;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(0, 139, 139, 0.597);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: .1rem;
+  display: none;
+}
+
+.img-label{
+  width: 11vh;
+  height: 10.5vh;
+  border-radius: 50%;
+  position: relative;
+  top: 1vh;
+  right: 0rem;
+  /* display: flex;
+  align-items: center; */
+  overflow: hidden;
+}
+
+
+#preview{
+  object-fit:cover;
+  object-position: -1rem;
+  /* object-position: ; */
+}
+
+#image{
+  display: none;
 }
