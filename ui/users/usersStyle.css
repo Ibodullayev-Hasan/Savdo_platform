@@ -1,7 +1,7 @@
 .header {
-  width: 66.8rem;
+  width: 70.5rem;
   height: 100px;
-  background-color: rgb(189, 188, 188);
+  background-color: darkslategrey;
   position: fixed;
   z-index: 100;
   display: flex;
@@ -73,7 +73,7 @@
   font-weight: 550;
   line-height: 7vh;
   position: relative;
-  left: 2rem;
+  left: 8rem;
   max-width:60%;
   overflow: hidden;
   user-select: none;
@@ -85,7 +85,7 @@
 
 #uploadBtn{
   position: absolute;
-  left: 11rem;
+  left: 14rem;
   top: 3.5rem;
   width: 5rem;
   height: 2rem;
@@ -119,7 +119,7 @@
   width: 100%;
   height: 400px;
   padding: 10px;
-  background-color: rgb(169, 169, 237);
+  background-color: transparent;
   position: relative;
   top: 15vh;
 }
@@ -130,8 +130,9 @@
   text-align: center;
   font-family: "Lacquer", display;
   position: relative;
+  font-size: 1.4rem;
   top: 20vh;
-  color: rgb(68, 64, 64);
+  color: rgb(198, 197, 197);
 }
 
 #usersTable{

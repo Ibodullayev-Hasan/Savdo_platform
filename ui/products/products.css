@@ -1,5 +1,5 @@
 .menu {
-  width: 74%;
+  /* width: 74%; */
   height: 100%;
   background-color: white;
   overflow: hidden;
@@ -7,7 +7,7 @@
 }
 
 .header {
-  width: 68.9%;
+  width: 69.4rem;
   height: 80px;
 }
 

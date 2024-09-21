@@ -1,3 +1,5 @@
+
+
 document.getElementById("searchButton").addEventListener("click", function () {
   const searchValue = document.getElementById("searchInput").value.trim();
 
@@ -17,6 +19,16 @@ document.addEventListener("keydown", (event) => {
     } else {
       searchUsersByName(searchValue);
     }
+  }
+});
+
+document.addEventListener("keydown", function () {
+  const searchValue = document.getElementById("searchInput").value.trim();
+
+  if (searchValue === "") {
+    fetchUsers();
+  } else {
+    searchUsersByName(searchValue);
   }
 });
 
@@ -103,4 +115,8 @@ document.getElementById("uploadBtn").addEventListener("click", function () {
   }
 });
 
-document.addEventListener("DOMContentLoaded", fetchUsers());
+document.addEventListener("DOMContentLoaded", function(){
+  fetchUsers()
+  document.getElementById("stepAtHome").style.display = "none";
+  document.getElementById("stepAtUsers").style.display = "block";
+});
