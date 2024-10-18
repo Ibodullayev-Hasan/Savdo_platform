@@ -9,7 +9,7 @@ fetch("https://test-api5-031z.onrender.com/")
     }
   })
   .then((data) => {
-    let admin = data.data.find((el) => el.id == 43);
+    let admin = data.data.find((el) => el.id == 2);
     adminName.textContent = admin.fullname;
   });
 

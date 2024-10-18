@@ -2,8 +2,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".sign-up").style.display = "flex";
 });
-let a = document.getElementById("sign-up-form").value;
-console.log(a);
 
 document
   .getElementById("sign-up-form")
