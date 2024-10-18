@@ -3,3 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("stepAtProducts").style.display = "block";
 });
+
+
+// search

@@ -1,5 +1,5 @@
 // Vercel'dagi API'ga HTTP GET so'rovi yuborish
-fetch("https://api-5-lac.vercel.app/")
+fetch("https://test-api5-031z.onrender.com/")
   .then((response) => {
     if (response.ok) {
       return response.json();

@@ -1,5 +1,3 @@
-
-
 document.getElementById("searchButton").addEventListener("click", function () {
   const searchValue = document.getElementById("searchInput").value.trim();
 
@@ -33,7 +31,7 @@ document.addEventListener("keydown", function () {
 });
 
 function fetchUsers() {
-  fetch("https://api-5-lac.vercel.app/")
+  fetch("https://test-api5-031z.onrender.com/")
     .then((response) => {
       if (response.ok) {
         return response.json();
@@ -68,7 +66,7 @@ function populateTable(users) {
 }
 
 function searchUsersByName(name) {
-  fetch(`https://api-5-lac.vercel.app/search/name/${name}`)
+  fetch(`https://test-api5-031z.onrender.com/search/name/${name}`)
     .then((response) => {
       if (response.ok) {
         return response.json();

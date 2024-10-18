@@ -7,19 +7,113 @@
 }
 
 .header {
-  width: 69.4rem;
-  height: 80px;
+  width: 69.5rem;
+  height: 100px;
+  background-color: darkslategrey;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
 }
 
-.account-img p {
-  height: 82%;
+.search-dev {
+  width: 55%;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.search-dev input {
+  border-radius: 15px 0 0 15px;
+  border: none;
+  width: 92%;
+  height: 100%;
+  margin: 0;
+  padding-left: 10px;
+  font-size: 100%;
+  color:rgb(0, 0, 0);
+}
+
+
+
+#searchButton {
+  display: flex;
+  border-radius: 0 15px 15px 0;
+  border: none;
+  border-left: 1px solid black;
+  background-color: white;
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-dev button:active {
+  transform: scale(0.97);
+}
+
+.search-dev i {
+  color: gray;
+  font-size: 180%;
+}
+
+.account-img {
+  width: 35%;
+  height: 85%;
   position: relative;
-  left: 2rem;
-  top: -.6rem;
+  background-color: transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  background-color: transparent;
 }
 
-.img-label {
-  top: -0.7rem;
+#adminName{
+  font-size: 1rem;
+  font-weight: 550;
+  line-height: 7vh;
+  position: relative;
+  left: 8rem;
+  max-width:60%;
+  overflow: hidden;
+  user-select: none;
+}
+
+#image {
+  display: none;
+}
+
+#uploadBtn{
+  position: absolute;
+  left: 14rem;
+  top: 3.5rem;
+  width: 5rem;
+  height: 2rem;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(0, 139, 139, 0.597);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: .1rem;
+  /* display: none; */
+}
+.img-label{
+  width: 11vh;
+  height: 10vh;
+  border-radius: 50%;
+  position: relative;
+  top: 1vh;
+  right: 0rem;
+  overflow: hidden;
 }
 
 
@@ -33,7 +127,7 @@ section{
     top: 4rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     gap: 1rem;
     padding-top: 2rem;
@@ -43,6 +137,6 @@ section div {
     width: 31%;
     height: 28rem;
     background-color: rgb(8, 155, 47);
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 12px;
 }

@@ -4,7 +4,7 @@
 // ----------------------------------------------------------------------------------
 // API'dan foydalanuvchilarni olish
 function fetchUsers() {
-    fetch('https://api-5-lac.vercel.app/')
+    fetch('https://test-api5-031z.onrender.com/')
       .then(response => {
         if (response.ok) {
           return response.json(); // Javobni JSON formatiga o'tkazamiz
@@ -82,7 +82,7 @@ function fetchUsers() {
     const password = document.getElementById(`password-${userId}`).value;
     const phonenumber = document.getElementById(`phonenumber-${userId}`).value;
   
-    fetch(`https://api-5-lac.vercel.app/user/update/${userId}`, {
+    fetch(`https://test-api5-031z.onrender.com/user/update/${userId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -101,7 +101,7 @@ function fetchUsers() {
   
   // Delete user from the database
   function deleteUser(userId) {
-    fetch(`https://api-5-lac.vercel.app/user/delete/${userId}`, {
+    fetch(`https://test-api5-031z.onrender.com/user/delete/${userId}`, {
       method: 'DELETE'
     })
       .then(response => {

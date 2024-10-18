@@ -21,7 +21,7 @@ document
     // console.log(formData.username);
 
     // API'ga POST so'rovi yuborish
-    fetch("https://api-5-lac.vercel.app/user/create", {
+    fetch("https://test-api5-031z.onrender.com/user/create", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
