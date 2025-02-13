@@ -31,7 +31,7 @@ document.addEventListener("keydown", function () {
 });
 
 function fetchUsers() {
-  fetch("https://test-api5-031z.onrender.com/")
+  fetch("https://api-5-six.vercel.app/")
     .then((response) => {
       if (response.ok) {
         return response.json();
@@ -66,7 +66,7 @@ function populateTable(users) {
 }
 
 function searchUsersByName(name) {
-  fetch(`https://test-api5-031z.onrender.com/search/name/${name}`)
+  fetch(`https://api-5-six.vercel.app/search/name/${name}`)
     .then((response) => {
       if (response.ok) {
         return response.json();

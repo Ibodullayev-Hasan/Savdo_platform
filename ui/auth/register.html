@@ -8,21 +8,30 @@
 </head>
 <body>
     <div class="box">
-        <h1 class="sign-title">Sign in</h1>
+        <h1 class="sign-title">Sign up</h1>
         <div id="error-message"></div>
         
-    <div class="sign-up">
-        <form id="sign-up-form">
-            <input required type="text" name="fullname" placeholder="Full name" />
-            <input required type="text" name="username" placeholder="User name" />
-            <input required type="email" name="email" placeholder="Email" />
-            <input required type="password" name="password" placeholder="Password" />
-            <input required type="number" name="phonenumber" placeholder="Phone number">
-            <button type="submit">Submit</button>
-     </form>
+        <div class="sign-up">
+            <form id="sign-up-form">
+                <input required type="text" name="fullname" placeholder="Full name" />
+                <input required type="text" name="username" placeholder="User name" />
+                <input required type="email" name="email" placeholder="Email" />
+                <input required type="password" name="password" placeholder="Password" />
+                <input required type="number" name="phonenumber" placeholder="Phone number" />
 
-      </div>
+                <!-- Rasm yuklash qismi -->
+                <input required type="file" id="image" accept="image/*" />
+                <button type="button" id="uploadBtn">Upload Image</button>
+                <p id="uploadStatus"></p>
+
+                <!-- API'dan kelgan rasm URL'ni saqlash -->
+                <input type="hidden" name="img_url" id="img_url" />
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
+
     <script src="/ui/auth/sign-up.js"></script>
 </body>
 </html>

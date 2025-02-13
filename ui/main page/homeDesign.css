@@ -65,6 +65,7 @@ main {
   padding-right: 2vh;
   word-spacing: 0.5rem;
   letter-spacing: 0.2rem;
+  line-height: 10px;
   color: white;
   font-size: 1.3rem;
   user-select: none;
